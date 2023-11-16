@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="jep.jpg"/>
+    <link rel="stylesheet" href="porfolio.css"/>
+    <script src="https://kit.fontawesome.com/a92db0e65c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> <!---header-->
+        <div class="container">
+            <nav>
+                <img src="jep.jpg" alt="logo" class="logo"/>
+                <ul id="side-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#serivces">Services</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <h1>Josh Efraim C. Padernal</h1>
+                <p>BSIT-1 Student<br/>University of Cebu-Main</p>
+                <a href="resume.pdf" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </div>
+     <!---end of header-->
+
+     <!--home-->
+    <div id="container-2">
+        <section id="home">
+            <h1>Home</h1>
+        </section>
+        <div class="home-content">
+                <section id="about">
+                    <div id="about">
+                        <div class="container">
+                            <div class="row">
+                                <div class="about-col-1">
+                                    <img src="profile.jpeg" alt="profile" class="profile"/>
+                                </div>
+                                <div class="about-col-2">
+                                    <h2 class="sub-title"><u>About</u></h2>
+                                    <p>Hi, my name is Josh Efraim C. Padernal and I'm Currently a 1st Year BSIT student currently studying at University of Cebu-Main Campus. this is my first portfolio for my Web Development Major Subject.</p>
+                                     <!--tab-titles-->
+                                    <div class="tab-titles">
+                                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                                    </div>
+                                    <div class="tab-contents active-tab" id="skills">
+                                        <ul><!--skills-->
+                                            <li><span>Web Development
+                                            </span><br/>basic web development</li>
+                                            <li><span>basic computer applications</span><br/>basic understanding of computer applications</li>
+                                            <li><span>HTML,CSS,JavaScript</span><br/>basic knowledge about the mentioned languages</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-contents" id="experience">
+                                        <ul><!--experience-->
+                                            <li><span>Current Experience
+                                            </span><br/>No Experience</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-contents" id="education">
+                                        <ul><!--education-->
+                                            <li><span>Primary
+                                            </span><br/>Talamban Elementary School</li>
+                                            <li><span>Secondary</span><br/>Talamban National High School</li>
+                                            <li><span>Tertiary</span><br/>University of Cebu-Main Campus</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                    </section> 
+                    <!---services-->
+                    <section id="serivces">
+                        <div class="container">
+                            <h2 class="sub-title"><u>Services</u></h2>
+                            <div class="service-list">
+                                <div>
+                                    <i class="fab fa-html5"></i>
+                                    <h3>HTML</h3>
+                                    <p>I offer HTML coding services to create well-structured and semantically meaningful web pages, ensuring clean and efficient markup that adheres to web standards for optimal accessibility and search engine visibility.</p><a href="#">Learn more</a>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-css3"></i>
+                                   <h3>CSS</h3>
+                                   <p>I provide CSS styling services to enhance the visual appeal and user experience of websites, utilizing modern CSS techniques to create beautiful designs, responsive layouts, and engaging animations that bring websites to life.</p>
+                                   <a href="#">Learn more</a>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-js"></i>
+                                    <h3>JavaScript</h3>
+                                    <p>With my JavaScript knowledge, I offer dynamic and interactive functionality to websites, leveraging the power of JavaScript frameworks and libraries to create engaging user interfaces, implement complex logic, and enhance the overall interactivity and user experience of web applications.</p><a href="#">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--contacts-->
+                <section id="contacts">
+                    <div id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-left">
+                                    <h2 class="sub-title"><u>Contacts</u></h2>
+                                    <p><i class="fa-solid fa-paper-plane"></i> josh.padernal29@gmail.com</p>
+                                    <p><i class="fa-solid fa-phone"></i> 09295819297</p>
+                                    <div class="social-icons">
+                                        <a href="https://www.facebook.com/josh.padernal.5" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="https://github.com/joshpadernal29" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                        <a href="#" target="_blank"><i class="fa-brands fa-google" target="_blank"></i></a>
+                                    </div>
+                                </div>
+                                <div class="contact-right">
+                                    <form>
+                                        <input type="text" name="name" placeholder="Enter name" required>
+                                        <input type="text" name="email" placeholder="Enter your gmail" required>
+                                        <textarea name="message" rows="6" placeholder="Enter Message"></textarea>
+                                        <button type="submit" class="btn btn2">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <div class="copyright">
+                    <p>COPYRIGHT&copy, JOSH EFRAIM C. PADERNAL, 2023;</p>
+                </div>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
