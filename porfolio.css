@@ -14,7 +14,7 @@ body{
 }
 #header{
     min-height: 500%;
-    background-image: url(background.jpg);
+    background-image: url(Background2.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,15 +44,15 @@ nav ul li{
     font-weight: 500;
 }
 nav ul li a{
-    color:#111;
+    color:#fff;
     text-decoration: none;
     font-size: 30px;
     position: relative;
     font-weight: 500;   
 }
 nav ul li a:hover{
-    background-color:#FF9B9B ;
-    color: #111;
+    background-color:tomato ;
+    color: white;
     display: block;
     outline: auto;
     border-radius: 10px;
@@ -63,7 +63,10 @@ nav ul li a:hover{
     text-align: center;
     margin: 20%;
     font-size: 30px;
-    color: #cec434;
+    color: #fff;
+}
+.header-content span{
+    color: #ff004f;
 }
 .btn{
     display:block;
@@ -270,7 +273,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(background.jpg);
+        background-image: url(Background2.png);
     }
     .header-content{
         margin-top: 100%;
